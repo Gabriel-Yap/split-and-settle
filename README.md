@@ -1,4 +1,4 @@
-# Split & Settle 모임 — Split without the stress
+# Split & Settle — Split without the stress
 
 A friendly bill-splitting app built with React + Vite. No awkward conversations, no mental math.
 
@@ -60,7 +60,7 @@ npm run deploy
 
 Your app will be live at:
 ```
-https://YOUR_USERNAME.github.io/split-and-settle
+https://Gabriel-Yap.github.io/split-and-settle
 ```
 
 ### 4. Future updates
