@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { AppProvider } from './AppContext.jsx'
 import Home from './components/Home.jsx'
 import GroupView from './components/GroupView.jsx'
@@ -13,7 +13,7 @@ import PaymentMethods from './components/PaymentMethods.jsx'
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter basename="/split-and-settle">
+      <HashRouter>
         <Routes>
           <Route path="/"                       element={<Home />} />
           <Route path="/group/:id"              element={<GroupView />} />
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/payment-methods"        element={<PaymentMethods />} />
         </Routes>
         <BottomNav />
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   )
 }
